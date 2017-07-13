@@ -1,0 +1,49 @@
+joshua-j [5:42 PM] 
+
+https://system.netsuite.com/pages/customerlogin.jsp
+
+joshua_james@co-graph.com
+
+joshua123
+
+
+tom 
+[10:54 AM] 
+トムさんアカウント
+
+
+UserID：tom_couchman@co-graph.com
+
+Password：CographNS16
+
+
+
+EX:
+
+luked [1:26 PM] 
+
+https://suitecoder.appspot.com/static/api.html
+
+
+[1:26] 
+http://www.netsuite.com/help/helpcenter/en_US/srbrowser/Browser2016_2/script/record/customer.html
+
+
+[1:27] 
+ ```/*
+問 - 1 下記の関数を実装してください:
+[引数]: 氏名、通貨、電話番号、メールアドレス 
+[戻り値]: レコードの内部ID
+[仕様]:上記引数を新規の顧客レコードに保存する。
+*/
+
+function createCustomer(name, currency, phone, mail) {
+    var customerRec = nlapiCreateRecord("customer");
+    customerRec.setFieldValue('firstname', name);
+
+    nlapiLogExecution('debug', JSON.stringify(customerRec));
+
+    return customerRec.getId();
+}        
+//createCustomer(name, currency, phone, mail)
+createCustomer('bobby');```

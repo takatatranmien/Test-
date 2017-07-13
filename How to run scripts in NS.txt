@@ -1,0 +1,30 @@
+https://system.na1.netsuite.com/app/common/scripting/scriptlist.nl?whence=
+
+video Guide : https://www.youtube.com/watch?v=paZFSeH2FUc
+
+
+menu taskbar:  Customization/Scripting/Scripts/New
+
+sau do  Select Type (chon Client).
+
+
+Tiep theo Dat ten & ID tuy y cho Script vao o Name (name: Contact-Client, ID: _contact_client)
+
+
+Tao file .js (contactScript.js) va brower duong dan den file trong o ScriptFile
+
+o 'Page Init Function' de ten function can chay trong file .js vua tao o tren.
+ 
+Xuong the Deployments/ trong o 'Applies TO' dien 'Contact' sau do Save.
+
+
+Tiep thao vao the Lists/Relationships/Contacts/new. Tao contact moi
+
+Neu file .js co cap nhat j thi can update lai duong link dan toi file .js do.(vao o Search tim dan file .js do).
+
+Edit Script/ Deployments.   chinh Status sang 'Released', bo dau tick trong o Deployed     SAVE.
+
+
+Lai vao Lists/Relationships/Contacts/New de tao contact moi tim den Customize/Customize Form. 
+Tim den the Custom Code de brower duong dan den file .js(contactScript.js) va dien ten function vao o PageInitFunction.(pageInit)
+//
